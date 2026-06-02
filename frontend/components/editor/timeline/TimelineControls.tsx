@@ -1,4 +1,5 @@
 'use client'
+import { useState, useRef, useEffect } from 'react'
 import { useEditorStore } from '@/store/editorStore'
 import { TrackType } from '@/store/types'
 
@@ -17,6 +18,20 @@ function formatTime(s: number): string {
 
 export default function TimelineControls({ videoRef, onAddTrack }: Props) {
   const { isPlaying, setIsPlaying, currentTime, zoom, setZoom } = useEditorStore()
+  const [trackMenuOpen, setTrackMenuOpen] = useState(false)
+  const trackMenuRef = useRef<HTMLDivElement>(null)
+
+  // Close on outside click
+  useEffect(() => {
+    if (!trackMenuOpen) return
+    const handler = (e: MouseEvent) => {
+      if (trackMenuRef.current && !trackMenuRef.current.contains(e.target as Node)) {
+        setTrackMenuOpen(false)
+      }
+    }
+    document.addEventListener('mousedown', handler)
+    return () => document.removeEventListener('mousedown', handler)
+  }, [trackMenuOpen])
 
   const togglePlay = () => {
     if (!videoRef.current) return
@@ -38,36 +53,41 @@ export default function TimelineControls({ videoRef, onAddTrack }: Props) {
 
   return (
     <div className="flex items-center gap-2 px-3 py-1.5 bg-gray-900 border-b border-gray-700 select-none shrink-0">
-      {/* Add track */}
-      <div className="relative group">
-        <button className="px-2 py-1 text-xs bg-gray-700 hover:bg-gray-600 text-gray-200 rounded flex items-center gap-1">
+      {/* Add track — click-based dropdown */}
+      <div ref={trackMenuRef} className="relative">
+        <button
+          onClick={() => setTrackMenuOpen(o => !o)}
+          className="px-2 py-1 text-xs bg-gray-700 hover:bg-gray-600 text-gray-200 rounded flex items-center gap-1"
+        >
           <span>+ Track</span>
           <svg className="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
           </svg>
         </button>
-        <div className="absolute left-0 top-full mt-1 bg-gray-800 border border-gray-600 rounded shadow-xl z-50 hidden group-hover:block min-w-[120px]">
-          {(['video', 'audio', 'subtitle'] as TrackType[]).map(t => (
-            <button
-              key={t}
-              onClick={() => onAddTrack(t)}
-              className="block w-full text-left px-3 py-1.5 text-xs text-gray-200 hover:bg-gray-700 capitalize"
-            >
-              {t === 'subtitle' ? 'Subtitle' : t === 'audio' ? 'Audio' : 'Video'} Track
-            </button>
-          ))}
-        </div>
+        {trackMenuOpen && (
+          <div className="absolute left-0 top-full mt-1 bg-gray-800 border border-gray-600 rounded shadow-xl z-50 min-w-[130px]">
+            {(['video', 'audio', 'subtitle'] as TrackType[]).map(t => (
+              <button
+                key={t}
+                onClick={() => { onAddTrack(t); setTrackMenuOpen(false) }}
+                className="block w-full text-left px-3 py-2 text-xs text-gray-200 hover:bg-gray-700"
+              >
+                {t === 'subtitle' ? 'Subtitle' : t === 'audio' ? 'Audio' : 'Video'} Track
+              </button>
+            ))}
+          </div>
+        )}
       </div>
 
       <div className="w-px h-5 bg-gray-700 mx-1" />
 
       {/* Transport */}
-      <button onClick={stop} className="p-1 hover:bg-gray-700 rounded text-gray-300 hover:text-white">
+      <button onClick={stop} className="p-1 hover:bg-gray-700 rounded text-gray-300 hover:text-white" title="Stop (go to start)">
         <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
           <rect x="5" y="5" width="14" height="14" />
         </svg>
       </button>
-      <button onClick={togglePlay} className="p-1 hover:bg-gray-700 rounded text-gray-300 hover:text-white">
+      <button onClick={togglePlay} className="p-1 hover:bg-gray-700 rounded text-gray-300 hover:text-white" title="Play/Pause (Space)">
         {isPlaying ? (
           <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
             <rect x="6" y="4" width="4" height="16" />
@@ -80,7 +100,7 @@ export default function TimelineControls({ videoRef, onAddTrack }: Props) {
         )}
       </button>
 
-      <span className="text-xs font-mono text-indigo-400 ml-1">{formatTime(currentTime)}</span>
+      <span className="text-xs font-mono text-indigo-400 ml-1 tabular-nums">{formatTime(currentTime)}</span>
 
       <div className="w-px h-5 bg-gray-700 mx-1" />
 
@@ -95,7 +115,7 @@ export default function TimelineControls({ videoRef, onAddTrack }: Props) {
         onChange={e => setZoom(Number(e.target.value))}
         className="w-20 accent-indigo-500"
       />
-      <span className="text-xs text-gray-500 w-10">{zoom}px/s</span>
+      <span className="text-xs text-gray-500 w-10 tabular-nums">{zoom}px/s</span>
     </div>
   )
 }

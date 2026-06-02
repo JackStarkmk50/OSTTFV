@@ -24,11 +24,20 @@ export async function uploadVideo(
   })
 }
 
-export async function startTranscription(jobId: string, language?: string) {
+export async function startTranscription(
+  jobId: string,
+  language?: string,
+  subtitleMode: 'sentence' | 'word' | 'group' = 'sentence',
+  wordCount: number = 3,
+) {
   const res = await fetch(`${API}/transcribe/${jobId}`, {
     method: 'POST',
     headers: { 'Content-Type': 'application/json' },
-    body: JSON.stringify({ language: language || null }),
+    body: JSON.stringify({
+      language: language || null,
+      subtitle_mode: subtitleMode,
+      word_count: wordCount,
+    }),
   })
   if (!res.ok) throw new Error(await res.text())
   return res.json()
@@ -41,7 +50,7 @@ export async function getJob(jobId: string) {
 }
 
 export function createWebSocket(jobId: string): WebSocket {
-  return new WebSocket(`ws://localhost:8000/ws/${jobId}`)
+  return new WebSocket(`ws://localhost:8000/api/ws/${jobId}`)
 }
 
 export async function translateSegments(jobId: string, mode: 'romanize' | 'english' | 'tanglish') {

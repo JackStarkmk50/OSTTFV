@@ -11,8 +11,7 @@ app = FastAPI(title="OSTTFV Backend", version="1.0.0")
 
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["http://localhost:3000", "http://127.0.0.1:3000"],
-    allow_credentials=True,
+    allow_origins=["*"],  # local-only server, WS needs wildcard to bypass Starlette CORS bug
     allow_methods=["*"],
     allow_headers=["*"],
 )

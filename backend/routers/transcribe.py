@@ -38,7 +38,50 @@ async def _broadcast(job_id: str, message: dict):
         sockets.remove(ws)
 
 
-async def _run_transcription(job_id: str, language: str | None):
+def _regroup_segments(raw_segs: list, mode: str, word_count: int) -> list:
+    if mode == "sentence":
+        return raw_segs
+
+    # Collect all words from all segments
+    all_words = []
+    for seg in raw_segs:
+        all_words.extend(seg.get("words", []))
+
+    if not all_words:
+        return raw_segs
+
+    if mode == "word":
+        return [
+            {
+                "id": i,
+                "start": w["start"],
+                "end": w["end"],
+                "text": w["word"].strip(),
+                "words": [w],
+            }
+            for i, w in enumerate(all_words)
+            if w["word"].strip()
+        ]
+
+    # mode == "group"
+    n = max(1, word_count)
+    groups = []
+    for i in range(0, len(all_words), n):
+        chunk = [w for w in all_words[i:i + n] if w["word"].strip()]
+        if not chunk:
+            continue
+        groups.append({
+            "id": len(groups),
+            "start": chunk[0]["start"],
+            "end": chunk[-1]["end"],
+            "text": " ".join(w["word"].strip() for w in chunk),
+            "words": chunk,
+        })
+    return groups
+
+
+async def _run_transcription(job_id: str, language: str | None,
+                              subtitle_mode: str = "sentence", word_count: int = 3):
     job = await _load_job(job_id)
     job["status"] = "processing"
     job["progress"] = 0.0
@@ -56,6 +99,8 @@ async def _run_transcription(job_id: str, language: str | None):
         raw_segs, detected_lang, duration = await transcribe_video(
             job["video_path"], language=language, progress_callback=on_progress
         )
+
+        raw_segs = _regroup_segments(raw_segs, subtitle_mode, word_count)
 
         segments = []
         for seg in raw_segs:
@@ -107,7 +152,8 @@ async def start_transcription(
     job = await _load_job(job_id)
     if job["status"] == "processing":
         raise HTTPException(400, "Already processing")
-    background_tasks.add_task(_run_transcription, job_id, req.language)
+    background_tasks.add_task(_run_transcription, job_id, req.language,
+                              req.subtitle_mode, req.word_count)
     return {"status": "processing", "job_id": job_id}
 
 

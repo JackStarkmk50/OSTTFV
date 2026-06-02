@@ -10,7 +10,7 @@ WHISPER_DEVICE = "cuda"
 WHISPER_COMPUTE_TYPE = "float16"
 
 OLLAMA_BASE_URL = "http://localhost:11434"
-OLLAMA_MODEL = "qwen2.5:3b"
+OLLAMA_MODEL = "gemma3:4b"   # 140+ langs incl. Tamil/Telugu/Malayalam/Hindi; fits RTX 4060 8GB
 
 VIDEOS_DIR.mkdir(parents=True, exist_ok=True)
 JOBS_DIR.mkdir(parents=True, exist_ok=True)

@@ -61,6 +61,8 @@ class JobResponse(BaseModel):
 
 class TranscribeRequest(BaseModel):
     language: Optional[str] = None
+    subtitle_mode: str = "sentence"  # sentence | word | group
+    word_count: int = 3              # used when subtitle_mode == "group"
 
 
 class TranslateRequest(BaseModel):

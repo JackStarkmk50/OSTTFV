@@ -1,0 +1,204 @@
+11:59:28 [hook] session-start: PROJECT_DIR=C:/Rajendran/new_/OSTTFV PIPELINE_DIR=C:/Users/OG07/.claude/plugins/cache/claude-plugins-official/remember/0.7.3 REMEMBER_DIR=C:/Rajendran/new_/OSTTFV/.remember
+11:59:29 [hook] save-session: PROJECT_DIR=C:/Rajendran/new_/OSTTFV PIPELINE_DIR=C:/Users/OG07/.claude/plugins/cache/claude-plugins-official/remember/0.7.3 PYTHON=python3 REMEMBER_DIR=C:/Rajendran/new_/OSTTFV/.remember
+11:59:29 [force] bypassing cooldown + min msgs
+11:59:29 [extract] session 3af05740-84ff-4227-8c19-c75423bb1648
+11:59:29 [hook] run-consolidation: PROJECT_DIR=C:/Rajendran/new_/OSTTFV PIPELINE_DIR=C:/Users/OG07/.claude/plugins/cache/claude-plugins-official/remember/0.7.3 PYTHON=python3 REMEMBER_DIR=C:/Rajendran/new_/OSTTFV/.remember
+11:59:30 [consolidation] start
+11:59:30 [extract] 1 exchanges (1 human)
+11:59:31 [haiku] calling (branch: main)
+11:59:41 [hook] session-start: PROJECT_DIR=C:/Rajendran/new_/OSTTFV PIPELINE_DIR=C:/Users/OG07/.claude/plugins/cache/claude-plugins-official/remember/0.7.3 REMEMBER_DIR=C:/Rajendran/new_/OSTTFV/.remember
+11:59:42 [tokens] tokens: 9+16086cache→550out ($0.014371)
+11:59:42 [haiku] SKIP — position → 14
+11:59:42 [hook] save-session: PROJECT_DIR=C:/Rajendran/new_/OSTTFV PIPELINE_DIR=C:/Users/OG07/.claude/plugins/cache/claude-plugins-official/remember/0.7.3 PYTHON=python3 REMEMBER_DIR=C:/Rajendran/new_/OSTTFV/.remember
+11:59:42 [lock] locked by PID 1958, skipping
+11:59:43 [hook] run-consolidation: PROJECT_DIR=C:/Rajendran/new_/OSTTFV PIPELINE_DIR=C:/Users/OG07/.claude/plugins/cache/claude-plugins-official/remember/0.7.3 PYTHON=python3 REMEMBER_DIR=C:/Rajendran/new_/OSTTFV/.remember
+11:59:43 [consolidation] locked by PID 1973, skip
+11:59:43 [consolidation] tokens: 9+16086cache→862out ($0.017220)
+11:59:43 [consolidation] done: 1 files consolidated
+11:59:46 [hook] session-start: PROJECT_DIR=C:/Rajendran/new_/OSTTFV PIPELINE_DIR=C:/Users/OG07/.claude/plugins/cache/claude-plugins-official/remember/0.7.3 REMEMBER_DIR=C:/Rajendran/new_/OSTTFV/.remember
+11:59:47 [hook] save-session: PROJECT_DIR=C:/Rajendran/new_/OSTTFV PIPELINE_DIR=C:/Users/OG07/.claude/plugins/cache/claude-plugins-official/remember/0.7.3 PYTHON=python3 REMEMBER_DIR=C:/Rajendran/new_/OSTTFV/.remember
+11:59:47 [force] bypassing cooldown + min msgs
+11:59:47 [extract] session 3af05740-84ff-4227-8c19-c75423bb1648
+11:59:48 [extract] 0 exchanges (0 human)
+11:59:48 [extract] 0 exchanges, skip
+12:07:18 [hook] session-start: PROJECT_DIR=C:/Rajendran/new_/OSTTFV PIPELINE_DIR=C:/Users/OG07/.claude/plugins/cache/claude-plugins-official/remember/0.7.3 REMEMBER_DIR=C:/Rajendran/new_/OSTTFV/.remember
+12:07:19 [hook] save-session: PROJECT_DIR=C:/Rajendran/new_/OSTTFV PIPELINE_DIR=C:/Users/OG07/.claude/plugins/cache/claude-plugins-official/remember/0.7.3 PYTHON=python3 REMEMBER_DIR=C:/Rajendran/new_/OSTTFV/.remember
+12:07:19 [force] bypassing cooldown + min msgs
+12:07:19 [extract] session 3af05740-84ff-4227-8c19-c75423bb1648
+12:07:19 [extract] 0 exchanges (0 human)
+12:07:19 [extract] 0 exchanges, skip
+12:07:26 [hook] session-start: PROJECT_DIR=C:/Rajendran/new_/OSTTFV PIPELINE_DIR=C:/Users/OG07/.claude/plugins/cache/claude-plugins-official/remember/0.7.3 REMEMBER_DIR=C:/Rajendran/new_/OSTTFV/.remember
+12:07:26 [hook] session-start: PROJECT_DIR=C:/Rajendran/new_/OSTTFV PIPELINE_DIR=C:/Users/OG07/.claude/plugins/cache/claude-plugins-official/remember/0.7.3 REMEMBER_DIR=C:/Rajendran/new_/OSTTFV/.remember
+12:07:27 [hook] save-session: PROJECT_DIR=C:/Rajendran/new_/OSTTFV PIPELINE_DIR=C:/Users/OG07/.claude/plugins/cache/claude-plugins-official/remember/0.7.3 PYTHON=python3 REMEMBER_DIR=C:/Rajendran/new_/OSTTFV/.remember
+12:07:27 [force] bypassing cooldown + min msgs
+12:07:27 [extract] session ccace726-8653-4c7d-a049-add606168933
+12:07:27 [hook] save-session: PROJECT_DIR=C:/Rajendran/new_/OSTTFV PIPELINE_DIR=C:/Users/OG07/.claude/plugins/cache/claude-plugins-official/remember/0.7.3 PYTHON=python3 REMEMBER_DIR=C:/Rajendran/new_/OSTTFV/.remember
+12:07:27 [lock] locked by PID 1268, skipping
+12:07:27 [extract] 83 exchanges (3 human)
+12:07:28 [haiku] calling (branch: main)
+12:07:29 [hook] session-start: PROJECT_DIR=C:/Rajendran/new_/OSTTFV PIPELINE_DIR=C:/Users/OG07/.claude/plugins/cache/claude-plugins-official/remember/0.7.3 REMEMBER_DIR=C:/Rajendran/new_/OSTTFV/.remember
+12:07:30 [hook] save-session: PROJECT_DIR=C:/Rajendran/new_/OSTTFV PIPELINE_DIR=C:/Users/OG07/.claude/plugins/cache/claude-plugins-official/remember/0.7.3 PYTHON=python3 REMEMBER_DIR=C:/Rajendran/new_/OSTTFV/.remember
+12:07:30 [force] bypassing cooldown + min msgs
+12:07:30 [extract] session ccace726-8653-4c7d-a049-add606168933
+12:07:31 [extract] 83 exchanges (3 human)
+12:07:31 [haiku] calling (branch: main)
+12:07:44 [tokens] tokens: 9+27754cache→889out ($0.007229)
+12:07:44 [write] appended: ## 06:37 | main
+12:07:45 [write] position → 278
+12:07:45 [ndc] now.md → today-2026-06-11.md
+12:07:45 [ndc] running (PID 1660)
+12:07:54 [tokens] tokens: 9+16086cache→2349out ($0.036699)
+12:07:54 [write] appended: ## 06:37 | main
+12:07:55 [write] position → 278
+12:07:58 [ndc] tokens: 9+16086cache→1011out ($0.022465)
+12:07:58 [ndc] 228→187b (-17%)
+12:08:33 [hook] session-start: PROJECT_DIR=C:/Rajendran/new_/OSTTFV PIPELINE_DIR=C:/Users/OG07/.claude/plugins/cache/claude-plugins-official/remember/0.7.3 REMEMBER_DIR=C:/Rajendran/new_/OSTTFV/.remember
+12:08:34 [hook] save-session: PROJECT_DIR=C:/Rajendran/new_/OSTTFV PIPELINE_DIR=C:/Users/OG07/.claude/plugins/cache/claude-plugins-official/remember/0.7.3 PYTHON=python3 REMEMBER_DIR=C:/Rajendran/new_/OSTTFV/.remember
+12:08:34 [force] bypassing cooldown + min msgs
+12:08:34 [extract] session ccace726-8653-4c7d-a049-add606168933
+12:08:35 [extract] 0 exchanges (0 human)
+12:08:35 [extract] 0 exchanges, skip
+12:10:46 [hook] session-start: PROJECT_DIR=C:/Rajendran/new_/OSTTFV PIPELINE_DIR=C:/Users/OG07/.claude/plugins/cache/claude-plugins-official/remember/0.7.3 REMEMBER_DIR=C:/Rajendran/new_/OSTTFV/.remember
+12:10:47 [hook] save-session: PROJECT_DIR=C:/Rajendran/new_/OSTTFV PIPELINE_DIR=C:/Users/OG07/.claude/plugins/cache/claude-plugins-official/remember/0.7.3 PYTHON=python3 REMEMBER_DIR=C:/Rajendran/new_/OSTTFV/.remember
+12:10:47 [force] bypassing cooldown + min msgs
+12:10:47 [extract] session d19d6c12-f9ff-4ab9-96f1-5ba77aa1c08a
+12:10:47 [extract] 1 exchanges (1 human)
+12:10:47 [haiku] calling (branch: main)
+12:10:54 [tokens] tokens: 9+16086cache→276out ($0.019014)
+12:10:54 [haiku] SKIP — position → 14
+12:17:17 [hook] post-tool: PROJECT_DIR=C:/Rajendran/new_/OSTTFV PIPELINE_DIR=C:/Users/OG07/.claude/plugins/cache/claude-plugins-official/remember/0.7.3 PYTHON=python3 REMEMBER_DIR=C:/Rajendran/new_/OSTTFV/.remember
+12:17:17 [hook] post-tool: PROJECT_DIR=C:/Rajendran/new_/OSTTFV PIPELINE_DIR=C:/Users/OG07/.claude/plugins/cache/claude-plugins-official/remember/0.7.3 PYTHON=python3 REMEMBER_DIR=C:/Rajendran/new_/OSTTFV/.remember
+12:17:17 [hook] save-session: PROJECT_DIR=C:/Rajendran/new_/OSTTFV PIPELINE_DIR=C:/Users/OG07/.claude/plugins/cache/claude-plugins-official/remember/0.7.3 PYTHON=python3 REMEMBER_DIR=C:/Rajendran/new_/OSTTFV/.remember
+12:17:18 [hook] post-tool: PROJECT_DIR=C:/Rajendran/new_/OSTTFV PIPELINE_DIR=C:/Users/OG07/.claude/plugins/cache/claude-plugins-official/remember/0.7.3 PYTHON=python3 REMEMBER_DIR=C:/Rajendran/new_/OSTTFV/.remember
+12:17:18 [extract] session ccace726-8653-4c7d-a049-add606168933
+12:17:18 [extract] 89 exchanges (5 human)
+12:17:18 [haiku] calling (branch: main)
+12:17:21 [hook] post-tool: PROJECT_DIR=C:/Rajendran/new_/OSTTFV PIPELINE_DIR=C:/Users/OG07/.claude/plugins/cache/claude-plugins-official/remember/0.7.3 PYTHON=python3 REMEMBER_DIR=C:/Rajendran/new_/OSTTFV/.remember
+12:17:22 [hook] post-tool: PROJECT_DIR=C:/Rajendran/new_/OSTTFV PIPELINE_DIR=C:/Users/OG07/.claude/plugins/cache/claude-plugins-official/remember/0.7.3 PYTHON=python3 REMEMBER_DIR=C:/Rajendran/new_/OSTTFV/.remember
+12:17:22 [hook] post-tool: PROJECT_DIR=C:/Rajendran/new_/OSTTFV PIPELINE_DIR=C:/Users/OG07/.claude/plugins/cache/claude-plugins-official/remember/0.7.3 PYTHON=python3 REMEMBER_DIR=C:/Rajendran/new_/OSTTFV/.remember
+12:17:30 [hook] post-tool: PROJECT_DIR=C:/Rajendran/new_/OSTTFV PIPELINE_DIR=C:/Users/OG07/.claude/plugins/cache/claude-plugins-official/remember/0.7.3 PYTHON=python3 REMEMBER_DIR=C:/Rajendran/new_/OSTTFV/.remember
+12:17:31 [hook] post-tool: PROJECT_DIR=C:/Rajendran/new_/OSTTFV PIPELINE_DIR=C:/Users/OG07/.claude/plugins/cache/claude-plugins-official/remember/0.7.3 PYTHON=python3 REMEMBER_DIR=C:/Rajendran/new_/OSTTFV/.remember
+12:17:31 [hook] post-tool: PROJECT_DIR=C:/Rajendran/new_/OSTTFV PIPELINE_DIR=C:/Users/OG07/.claude/plugins/cache/claude-plugins-official/remember/0.7.3 PYTHON=python3 REMEMBER_DIR=C:/Rajendran/new_/OSTTFV/.remember
+12:17:33 [tokens] tokens: 9+16086cache→1088out ($0.039588)
+12:17:33 [write] appended: ## 06:47 | main
+12:17:34 [write] position → 319
+12:17:36 [hook] post-tool: PROJECT_DIR=C:/Rajendran/new_/OSTTFV PIPELINE_DIR=C:/Users/OG07/.claude/plugins/cache/claude-plugins-official/remember/0.7.3 PYTHON=python3 REMEMBER_DIR=C:/Rajendran/new_/OSTTFV/.remember
+12:17:37 [hook] post-tool: PROJECT_DIR=C:/Rajendran/new_/OSTTFV PIPELINE_DIR=C:/Users/OG07/.claude/plugins/cache/claude-plugins-official/remember/0.7.3 PYTHON=python3 REMEMBER_DIR=C:/Rajendran/new_/OSTTFV/.remember
+12:19:05 [hook] post-tool: PROJECT_DIR=C:/Rajendran/new_/OSTTFV PIPELINE_DIR=C:/Users/OG07/.claude/plugins/cache/claude-plugins-official/remember/0.7.3 PYTHON=python3 REMEMBER_DIR=C:/Rajendran/new_/OSTTFV/.remember
+12:19:06 [hook] post-tool: PROJECT_DIR=C:/Rajendran/new_/OSTTFV PIPELINE_DIR=C:/Users/OG07/.claude/plugins/cache/claude-plugins-official/remember/0.7.3 PYTHON=python3 REMEMBER_DIR=C:/Rajendran/new_/OSTTFV/.remember
+12:21:19 [hook] post-tool: PROJECT_DIR=C:/Rajendran/new_/OSTTFV PIPELINE_DIR=C:/Users/OG07/.claude/plugins/cache/claude-plugins-official/remember/0.7.3 PYTHON=python3 REMEMBER_DIR=C:/Rajendran/new_/OSTTFV/.remember
+12:21:19 [hook] post-tool: PROJECT_DIR=C:/Rajendran/new_/OSTTFV PIPELINE_DIR=C:/Users/OG07/.claude/plugins/cache/claude-plugins-official/remember/0.7.3 PYTHON=python3 REMEMBER_DIR=C:/Rajendran/new_/OSTTFV/.remember
+12:23:43 [hook] post-tool: PROJECT_DIR=C:/Rajendran/new_/OSTTFV PIPELINE_DIR=C:/Users/OG07/.claude/plugins/cache/claude-plugins-official/remember/0.7.3 PYTHON=python3 REMEMBER_DIR=C:/Rajendran/new_/OSTTFV/.remember
+12:26:04 [hook] post-tool: PROJECT_DIR=C:/Rajendran/new_/OSTTFV PIPELINE_DIR=C:/Users/OG07/.claude/plugins/cache/claude-plugins-official/remember/0.7.3 PYTHON=python3 REMEMBER_DIR=C:/Rajendran/new_/OSTTFV/.remember
+12:26:05 [hook] save-session: PROJECT_DIR=C:/Rajendran/new_/OSTTFV PIPELINE_DIR=C:/Users/OG07/.claude/plugins/cache/claude-plugins-official/remember/0.7.3 PYTHON=python3 REMEMBER_DIR=C:/Rajendran/new_/OSTTFV/.remember
+12:26:05 [extract] session ccace726-8653-4c7d-a049-add606168933
+12:26:05 [extract] 16 exchanges (0 human)
+12:26:05 [extract] 0 human msgs < 3, skip
+12:26:12 [hook] post-tool: PROJECT_DIR=C:/Rajendran/new_/OSTTFV PIPELINE_DIR=C:/Users/OG07/.claude/plugins/cache/claude-plugins-official/remember/0.7.3 PYTHON=python3 REMEMBER_DIR=C:/Rajendran/new_/OSTTFV/.remember
+12:26:13 [hook] save-session: PROJECT_DIR=C:/Rajendran/new_/OSTTFV PIPELINE_DIR=C:/Users/OG07/.claude/plugins/cache/claude-plugins-official/remember/0.7.3 PYTHON=python3 REMEMBER_DIR=C:/Rajendran/new_/OSTTFV/.remember
+12:26:13 [cooldown] 8s < 120s, skip
+12:26:21 [hook] post-tool: PROJECT_DIR=C:/Rajendran/new_/OSTTFV PIPELINE_DIR=C:/Users/OG07/.claude/plugins/cache/claude-plugins-official/remember/0.7.3 PYTHON=python3 REMEMBER_DIR=C:/Rajendran/new_/OSTTFV/.remember
+12:26:22 [hook] save-session: PROJECT_DIR=C:/Rajendran/new_/OSTTFV PIPELINE_DIR=C:/Users/OG07/.claude/plugins/cache/claude-plugins-official/remember/0.7.3 PYTHON=python3 REMEMBER_DIR=C:/Rajendran/new_/OSTTFV/.remember
+12:26:22 [cooldown] 17s < 120s, skip
+12:26:52 [hook] post-tool: PROJECT_DIR=C:/Rajendran/new_/OSTTFV PIPELINE_DIR=C:/Users/OG07/.claude/plugins/cache/claude-plugins-official/remember/0.7.3 PYTHON=python3 REMEMBER_DIR=C:/Rajendran/new_/OSTTFV/.remember
+12:26:53 [hook] save-session: PROJECT_DIR=C:/Rajendran/new_/OSTTFV PIPELINE_DIR=C:/Users/OG07/.claude/plugins/cache/claude-plugins-official/remember/0.7.3 PYTHON=python3 REMEMBER_DIR=C:/Rajendran/new_/OSTTFV/.remember
+12:26:53 [cooldown] 48s < 120s, skip
+12:27:04 [hook] post-tool: PROJECT_DIR=C:/Rajendran/new_/OSTTFV PIPELINE_DIR=C:/Users/OG07/.claude/plugins/cache/claude-plugins-official/remember/0.7.3 PYTHON=python3 REMEMBER_DIR=C:/Rajendran/new_/OSTTFV/.remember
+12:27:05 [hook] save-session: PROJECT_DIR=C:/Rajendran/new_/OSTTFV PIPELINE_DIR=C:/Users/OG07/.claude/plugins/cache/claude-plugins-official/remember/0.7.3 PYTHON=python3 REMEMBER_DIR=C:/Rajendran/new_/OSTTFV/.remember
+12:27:05 [cooldown] 60s < 120s, skip
+12:27:17 [hook] post-tool: PROJECT_DIR=C:/Rajendran/new_/OSTTFV PIPELINE_DIR=C:/Users/OG07/.claude/plugins/cache/claude-plugins-official/remember/0.7.3 PYTHON=python3 REMEMBER_DIR=C:/Rajendran/new_/OSTTFV/.remember
+12:27:18 [hook] save-session: PROJECT_DIR=C:/Rajendran/new_/OSTTFV PIPELINE_DIR=C:/Users/OG07/.claude/plugins/cache/claude-plugins-official/remember/0.7.3 PYTHON=python3 REMEMBER_DIR=C:/Rajendran/new_/OSTTFV/.remember
+12:27:19 [cooldown] 74s < 120s, skip
+12:27:40 [hook] post-tool: PROJECT_DIR=C:/Rajendran/new_/OSTTFV PIPELINE_DIR=C:/Users/OG07/.claude/plugins/cache/claude-plugins-official/remember/0.7.3 PYTHON=python3 REMEMBER_DIR=C:/Rajendran/new_/OSTTFV/.remember
+12:27:41 [hook] save-session: PROJECT_DIR=C:/Rajendran/new_/OSTTFV PIPELINE_DIR=C:/Users/OG07/.claude/plugins/cache/claude-plugins-official/remember/0.7.3 PYTHON=python3 REMEMBER_DIR=C:/Rajendran/new_/OSTTFV/.remember
+12:27:42 [cooldown] 97s < 120s, skip
+12:28:12 [hook] post-tool: PROJECT_DIR=C:/Rajendran/new_/OSTTFV PIPELINE_DIR=C:/Users/OG07/.claude/plugins/cache/claude-plugins-official/remember/0.7.3 PYTHON=python3 REMEMBER_DIR=C:/Rajendran/new_/OSTTFV/.remember
+12:28:13 [hook] save-session: PROJECT_DIR=C:/Rajendran/new_/OSTTFV PIPELINE_DIR=C:/Users/OG07/.claude/plugins/cache/claude-plugins-official/remember/0.7.3 PYTHON=python3 REMEMBER_DIR=C:/Rajendran/new_/OSTTFV/.remember
+12:28:13 [extract] session ccace726-8653-4c7d-a049-add606168933
+12:28:13 [extract] 27 exchanges (0 human)
+12:28:13 [extract] 0 human msgs < 3, skip
+12:28:30 [hook] post-tool: PROJECT_DIR=C:/Rajendran/new_/OSTTFV PIPELINE_DIR=C:/Users/OG07/.claude/plugins/cache/claude-plugins-official/remember/0.7.3 PYTHON=python3 REMEMBER_DIR=C:/Rajendran/new_/OSTTFV/.remember
+12:28:31 [hook] save-session: PROJECT_DIR=C:/Rajendran/new_/OSTTFV PIPELINE_DIR=C:/Users/OG07/.claude/plugins/cache/claude-plugins-official/remember/0.7.3 PYTHON=python3 REMEMBER_DIR=C:/Rajendran/new_/OSTTFV/.remember
+12:28:31 [cooldown] 18s < 120s, skip
+12:28:40 [hook] post-tool: PROJECT_DIR=C:/Rajendran/new_/OSTTFV PIPELINE_DIR=C:/Users/OG07/.claude/plugins/cache/claude-plugins-official/remember/0.7.3 PYTHON=python3 REMEMBER_DIR=C:/Rajendran/new_/OSTTFV/.remember
+12:28:41 [hook] save-session: PROJECT_DIR=C:/Rajendran/new_/OSTTFV PIPELINE_DIR=C:/Users/OG07/.claude/plugins/cache/claude-plugins-official/remember/0.7.3 PYTHON=python3 REMEMBER_DIR=C:/Rajendran/new_/OSTTFV/.remember
+12:28:41 [cooldown] 28s < 120s, skip
+12:29:21 [hook] post-tool: PROJECT_DIR=C:/Rajendran/new_/OSTTFV PIPELINE_DIR=C:/Users/OG07/.claude/plugins/cache/claude-plugins-official/remember/0.7.3 PYTHON=python3 REMEMBER_DIR=C:/Rajendran/new_/OSTTFV/.remember
+12:29:22 [hook] save-session: PROJECT_DIR=C:/Rajendran/new_/OSTTFV PIPELINE_DIR=C:/Users/OG07/.claude/plugins/cache/claude-plugins-official/remember/0.7.3 PYTHON=python3 REMEMBER_DIR=C:/Rajendran/new_/OSTTFV/.remember
+12:29:22 [cooldown] 69s < 120s, skip
+12:29:29 [hook] post-tool: PROJECT_DIR=C:/Rajendran/new_/OSTTFV PIPELINE_DIR=C:/Users/OG07/.claude/plugins/cache/claude-plugins-official/remember/0.7.3 PYTHON=python3 REMEMBER_DIR=C:/Rajendran/new_/OSTTFV/.remember
+12:29:30 [hook] save-session: PROJECT_DIR=C:/Rajendran/new_/OSTTFV PIPELINE_DIR=C:/Users/OG07/.claude/plugins/cache/claude-plugins-official/remember/0.7.3 PYTHON=python3 REMEMBER_DIR=C:/Rajendran/new_/OSTTFV/.remember
+12:29:30 [cooldown] 77s < 120s, skip
+12:29:35 [hook] post-tool: PROJECT_DIR=C:/Rajendran/new_/OSTTFV PIPELINE_DIR=C:/Users/OG07/.claude/plugins/cache/claude-plugins-official/remember/0.7.3 PYTHON=python3 REMEMBER_DIR=C:/Rajendran/new_/OSTTFV/.remember
+12:29:36 [hook] save-session: PROJECT_DIR=C:/Rajendran/new_/OSTTFV PIPELINE_DIR=C:/Users/OG07/.claude/plugins/cache/claude-plugins-official/remember/0.7.3 PYTHON=python3 REMEMBER_DIR=C:/Rajendran/new_/OSTTFV/.remember
+12:29:37 [cooldown] 84s < 120s, skip
+12:29:40 [hook] post-tool: PROJECT_DIR=C:/Rajendran/new_/OSTTFV PIPELINE_DIR=C:/Users/OG07/.claude/plugins/cache/claude-plugins-official/remember/0.7.3 PYTHON=python3 REMEMBER_DIR=C:/Rajendran/new_/OSTTFV/.remember
+12:29:41 [hook] save-session: PROJECT_DIR=C:/Rajendran/new_/OSTTFV PIPELINE_DIR=C:/Users/OG07/.claude/plugins/cache/claude-plugins-official/remember/0.7.3 PYTHON=python3 REMEMBER_DIR=C:/Rajendran/new_/OSTTFV/.remember
+12:29:41 [cooldown] 88s < 120s, skip
+12:29:47 [hook] post-tool: PROJECT_DIR=C:/Rajendran/new_/OSTTFV PIPELINE_DIR=C:/Users/OG07/.claude/plugins/cache/claude-plugins-official/remember/0.7.3 PYTHON=python3 REMEMBER_DIR=C:/Rajendran/new_/OSTTFV/.remember
+12:29:48 [hook] save-session: PROJECT_DIR=C:/Rajendran/new_/OSTTFV PIPELINE_DIR=C:/Users/OG07/.claude/plugins/cache/claude-plugins-official/remember/0.7.3 PYTHON=python3 REMEMBER_DIR=C:/Rajendran/new_/OSTTFV/.remember
+12:29:48 [cooldown] 95s < 120s, skip
+12:29:52 [hook] post-tool: PROJECT_DIR=C:/Rajendran/new_/OSTTFV PIPELINE_DIR=C:/Users/OG07/.claude/plugins/cache/claude-plugins-official/remember/0.7.3 PYTHON=python3 REMEMBER_DIR=C:/Rajendran/new_/OSTTFV/.remember
+12:29:52 [hook] save-session: PROJECT_DIR=C:/Rajendran/new_/OSTTFV PIPELINE_DIR=C:/Users/OG07/.claude/plugins/cache/claude-plugins-official/remember/0.7.3 PYTHON=python3 REMEMBER_DIR=C:/Rajendran/new_/OSTTFV/.remember
+12:29:53 [cooldown] 100s < 120s, skip
+12:29:57 [hook] post-tool: PROJECT_DIR=C:/Rajendran/new_/OSTTFV PIPELINE_DIR=C:/Users/OG07/.claude/plugins/cache/claude-plugins-official/remember/0.7.3 PYTHON=python3 REMEMBER_DIR=C:/Rajendran/new_/OSTTFV/.remember
+12:29:58 [hook] save-session: PROJECT_DIR=C:/Rajendran/new_/OSTTFV PIPELINE_DIR=C:/Users/OG07/.claude/plugins/cache/claude-plugins-official/remember/0.7.3 PYTHON=python3 REMEMBER_DIR=C:/Rajendran/new_/OSTTFV/.remember
+12:29:58 [cooldown] 105s < 120s, skip
+12:31:14 [hook] post-tool: PROJECT_DIR=C:/Rajendran/new_/OSTTFV PIPELINE_DIR=C:/Users/OG07/.claude/plugins/cache/claude-plugins-official/remember/0.7.3 PYTHON=python3 REMEMBER_DIR=C:/Rajendran/new_/OSTTFV/.remember
+12:31:15 [hook] save-session: PROJECT_DIR=C:/Rajendran/new_/OSTTFV PIPELINE_DIR=C:/Users/OG07/.claude/plugins/cache/claude-plugins-official/remember/0.7.3 PYTHON=python3 REMEMBER_DIR=C:/Rajendran/new_/OSTTFV/.remember
+12:31:15 [extract] session ccace726-8653-4c7d-a049-add606168933
+12:31:15 [extract] 46 exchanges (0 human)
+12:31:15 [extract] 0 human msgs < 3, skip
+12:31:18 [hook] post-tool: PROJECT_DIR=C:/Rajendran/new_/OSTTFV PIPELINE_DIR=C:/Users/OG07/.claude/plugins/cache/claude-plugins-official/remember/0.7.3 PYTHON=python3 REMEMBER_DIR=C:/Rajendran/new_/OSTTFV/.remember
+12:31:19 [hook] save-session: PROJECT_DIR=C:/Rajendran/new_/OSTTFV PIPELINE_DIR=C:/Users/OG07/.claude/plugins/cache/claude-plugins-official/remember/0.7.3 PYTHON=python3 REMEMBER_DIR=C:/Rajendran/new_/OSTTFV/.remember
+12:31:19 [cooldown] 4s < 120s, skip
+12:31:42 [hook] post-tool: PROJECT_DIR=C:/Rajendran/new_/OSTTFV PIPELINE_DIR=C:/Users/OG07/.claude/plugins/cache/claude-plugins-official/remember/0.7.3 PYTHON=python3 REMEMBER_DIR=C:/Rajendran/new_/OSTTFV/.remember
+12:31:43 [hook] save-session: PROJECT_DIR=C:/Rajendran/new_/OSTTFV PIPELINE_DIR=C:/Users/OG07/.claude/plugins/cache/claude-plugins-official/remember/0.7.3 PYTHON=python3 REMEMBER_DIR=C:/Rajendran/new_/OSTTFV/.remember
+12:31:43 [cooldown] 28s < 120s, skip
+12:32:04 [hook] post-tool: PROJECT_DIR=C:/Rajendran/new_/OSTTFV PIPELINE_DIR=C:/Users/OG07/.claude/plugins/cache/claude-plugins-official/remember/0.7.3 PYTHON=python3 REMEMBER_DIR=C:/Rajendran/new_/OSTTFV/.remember
+12:32:05 [hook] save-session: PROJECT_DIR=C:/Rajendran/new_/OSTTFV PIPELINE_DIR=C:/Users/OG07/.claude/plugins/cache/claude-plugins-official/remember/0.7.3 PYTHON=python3 REMEMBER_DIR=C:/Rajendran/new_/OSTTFV/.remember
+12:32:05 [cooldown] 50s < 120s, skip
+12:44:05 [hook] session-start: PROJECT_DIR=C:/Rajendran/new_/OSTTFV PIPELINE_DIR=C:/Users/OG07/.claude/plugins/cache/claude-plugins-official/remember/0.7.3 REMEMBER_DIR=C:/Rajendran/new_/OSTTFV/.remember
+12:44:05 [hook] session-start: PROJECT_DIR=C:/Rajendran/new_/OSTTFV PIPELINE_DIR=C:/Users/OG07/.claude/plugins/cache/claude-plugins-official/remember/0.7.3 REMEMBER_DIR=C:/Rajendran/new_/OSTTFV/.remember
+12:44:06 [hook] save-session: PROJECT_DIR=C:/Rajendran/new_/OSTTFV PIPELINE_DIR=C:/Users/OG07/.claude/plugins/cache/claude-plugins-official/remember/0.7.3 PYTHON=python3 REMEMBER_DIR=C:/Rajendran/new_/OSTTFV/.remember
+12:44:06 [hook] save-session: PROJECT_DIR=C:/Rajendran/new_/OSTTFV PIPELINE_DIR=C:/Users/OG07/.claude/plugins/cache/claude-plugins-official/remember/0.7.3 PYTHON=python3 REMEMBER_DIR=C:/Rajendran/new_/OSTTFV/.remember
+12:44:06 [lock] locked by PID 396, skipping
+12:44:06 [force] bypassing cooldown + min msgs
+12:44:06 [extract] session d19d6c12-f9ff-4ab9-96f1-5ba77aa1c08a
+12:44:07 [extract] 1 exchanges (1 human)
+12:44:07 [haiku] calling (branch: main)
+12:44:14 [tokens] tokens: 9+16086cache→272out ($0.019110)
+12:44:14 [haiku] SKIP — position → 14
+12:46:31 [hook] session-start: PROJECT_DIR=C:/Rajendran/new_/OSTTFV PIPELINE_DIR=C:/Users/OG07/.claude/plugins/cache/claude-plugins-official/remember/0.7.3 REMEMBER_DIR=C:/Rajendran/new_/OSTTFV/.remember
+12:46:32 [hook] save-session: PROJECT_DIR=C:/Rajendran/new_/OSTTFV PIPELINE_DIR=C:/Users/OG07/.claude/plugins/cache/claude-plugins-official/remember/0.7.3 PYTHON=python3 REMEMBER_DIR=C:/Rajendran/new_/OSTTFV/.remember
+12:46:32 [force] bypassing cooldown + min msgs
+12:46:32 [extract] session 02296f8a-559a-4457-9628-094ce6b619d7
+12:46:33 [extract] 0 exchanges (0 human)
+12:46:33 [extract] 0 exchanges, skip
+12:49:56 [hook] post-tool: PROJECT_DIR=C:/Rajendran/new_/OSTTFV PIPELINE_DIR=C:/Users/OG07/.claude/plugins/cache/claude-plugins-official/remember/0.7.3 PYTHON=python3 REMEMBER_DIR=C:/Rajendran/new_/OSTTFV/.remember
+12:49:57 [hook] save-session: PROJECT_DIR=C:/Rajendran/new_/OSTTFV PIPELINE_DIR=C:/Users/OG07/.claude/plugins/cache/claude-plugins-official/remember/0.7.3 PYTHON=python3 REMEMBER_DIR=C:/Rajendran/new_/OSTTFV/.remember
+12:49:57 [extract] session ccace726-8653-4c7d-a049-add606168933
+12:49:57 [extract] 149 exchanges (8 human)
+12:49:57 [haiku] calling (branch: main)
+12:50:26 [tokens] tokens: 9+16086cache→2825out ($0.054539)
+12:50:26 [write] appended: ## 07:19 | main
+12:50:26 [write] position → 519
+12:55:27 [hook] post-tool: PROJECT_DIR=C:/Rajendran/new_/OSTTFV PIPELINE_DIR=C:/Users/OG07/.claude/plugins/cache/claude-plugins-official/remember/0.7.3 PYTHON=python3 REMEMBER_DIR=C:/Rajendran/new_/OSTTFV/.remember
+13:00:43 [hook] post-tool: PROJECT_DIR=C:/Rajendran/new_/OSTTFV PIPELINE_DIR=C:/Users/OG07/.claude/plugins/cache/claude-plugins-official/remember/0.7.3 PYTHON=python3 REMEMBER_DIR=C:/Rajendran/new_/OSTTFV/.remember
+13:03:52 [hook] post-tool: PROJECT_DIR=C:/Rajendran/new_/OSTTFV PIPELINE_DIR=C:/Users/OG07/.claude/plugins/cache/claude-plugins-official/remember/0.7.3 PYTHON=python3 REMEMBER_DIR=C:/Rajendran/new_/OSTTFV/.remember
+13:14:22 [hook] post-tool: PROJECT_DIR=C:/Rajendran/new_/OSTTFV PIPELINE_DIR=C:/Users/OG07/.claude/plugins/cache/claude-plugins-official/remember/0.7.3 PYTHON=python3 REMEMBER_DIR=C:/Rajendran/new_/OSTTFV/.remember
+13:14:22 [hook] post-tool: PROJECT_DIR=C:/Rajendran/new_/OSTTFV PIPELINE_DIR=C:/Users/OG07/.claude/plugins/cache/claude-plugins-official/remember/0.7.3 PYTHON=python3 REMEMBER_DIR=C:/Rajendran/new_/OSTTFV/.remember
+13:14:24 [hook] post-tool: PROJECT_DIR=C:/Rajendran/new_/OSTTFV PIPELINE_DIR=C:/Users/OG07/.claude/plugins/cache/claude-plugins-official/remember/0.7.3 PYTHON=python3 REMEMBER_DIR=C:/Rajendran/new_/OSTTFV/.remember
+13:14:24 [hook] post-tool: PROJECT_DIR=C:/Rajendran/new_/OSTTFV PIPELINE_DIR=C:/Users/OG07/.claude/plugins/cache/claude-plugins-official/remember/0.7.3 PYTHON=python3 REMEMBER_DIR=C:/Rajendran/new_/OSTTFV/.remember
+13:14:25 [hook] post-tool: PROJECT_DIR=C:/Rajendran/new_/OSTTFV PIPELINE_DIR=C:/Users/OG07/.claude/plugins/cache/claude-plugins-official/remember/0.7.3 PYTHON=python3 REMEMBER_DIR=C:/Rajendran/new_/OSTTFV/.remember
+13:14:26 [hook] post-tool: PROJECT_DIR=C:/Rajendran/new_/OSTTFV PIPELINE_DIR=C:/Users/OG07/.claude/plugins/cache/claude-plugins-official/remember/0.7.3 PYTHON=python3 REMEMBER_DIR=C:/Rajendran/new_/OSTTFV/.remember
+13:14:39 [hook] post-tool: PROJECT_DIR=C:/Rajendran/new_/OSTTFV PIPELINE_DIR=C:/Users/OG07/.claude/plugins/cache/claude-plugins-official/remember/0.7.3 PYTHON=python3 REMEMBER_DIR=C:/Rajendran/new_/OSTTFV/.remember
+13:14:43 [hook] post-tool: PROJECT_DIR=C:/Rajendran/new_/OSTTFV PIPELINE_DIR=C:/Users/OG07/.claude/plugins/cache/claude-plugins-official/remember/0.7.3 PYTHON=python3 REMEMBER_DIR=C:/Rajendran/new_/OSTTFV/.remember
+13:14:55 [hook] post-tool: PROJECT_DIR=C:/Rajendran/new_/OSTTFV PIPELINE_DIR=C:/Users/OG07/.claude/plugins/cache/claude-plugins-official/remember/0.7.3 PYTHON=python3 REMEMBER_DIR=C:/Rajendran/new_/OSTTFV/.remember
+13:15:09 [hook] post-tool: PROJECT_DIR=C:/Rajendran/new_/OSTTFV PIPELINE_DIR=C:/Users/OG07/.claude/plugins/cache/claude-plugins-official/remember/0.7.3 PYTHON=python3 REMEMBER_DIR=C:/Rajendran/new_/OSTTFV/.remember
+13:15:10 [hook] post-tool: PROJECT_DIR=C:/Rajendran/new_/OSTTFV PIPELINE_DIR=C:/Users/OG07/.claude/plugins/cache/claude-plugins-official/remember/0.7.3 PYTHON=python3 REMEMBER_DIR=C:/Rajendran/new_/OSTTFV/.remember
+13:15:10 [hook] post-tool: PROJECT_DIR=C:/Rajendran/new_/OSTTFV PIPELINE_DIR=C:/Users/OG07/.claude/plugins/cache/claude-plugins-official/remember/0.7.3 PYTHON=python3 REMEMBER_DIR=C:/Rajendran/new_/OSTTFV/.remember
+13:15:20 [hook] post-tool: PROJECT_DIR=C:/Rajendran/new_/OSTTFV PIPELINE_DIR=C:/Users/OG07/.claude/plugins/cache/claude-plugins-official/remember/0.7.3 PYTHON=python3 REMEMBER_DIR=C:/Rajendran/new_/OSTTFV/.remember
+13:15:21 [hook] post-tool: PROJECT_DIR=C:/Rajendran/new_/OSTTFV PIPELINE_DIR=C:/Users/OG07/.claude/plugins/cache/claude-plugins-official/remember/0.7.3 PYTHON=python3 REMEMBER_DIR=C:/Rajendran/new_/OSTTFV/.remember
+13:15:21 [hook] post-tool: PROJECT_DIR=C:/Rajendran/new_/OSTTFV PIPELINE_DIR=C:/Users/OG07/.claude/plugins/cache/claude-plugins-official/remember/0.7.3 PYTHON=python3 REMEMBER_DIR=C:/Rajendran/new_/OSTTFV/.remember
+13:15:49 [hook] post-tool: PROJECT_DIR=C:/Rajendran/new_/OSTTFV PIPELINE_DIR=C:/Users/OG07/.claude/plugins/cache/claude-plugins-official/remember/0.7.3 PYTHON=python3 REMEMBER_DIR=C:/Rajendran/new_/OSTTFV/.remember

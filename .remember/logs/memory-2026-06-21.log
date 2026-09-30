@@ -1,0 +1,76 @@
+13:10:29 [hook] session-start: PROJECT_DIR=C:/Rajendran/new_/OSTTFV PIPELINE_DIR=C:/Users/OG07/.claude/plugins/cache/claude-plugins-official/remember/0.7.3 REMEMBER_DIR=C:/Rajendran/new_/OSTTFV/.remember
+13:10:30 [hook] save-session: PROJECT_DIR=C:/Rajendran/new_/OSTTFV PIPELINE_DIR=C:/Users/OG07/.claude/plugins/cache/claude-plugins-official/remember/0.7.3 PYTHON=python3 REMEMBER_DIR=C:/Rajendran/new_/OSTTFV/.remember
+13:10:31 [force] bypassing cooldown + min msgs
+13:10:31 [extract] session 02296f8a-559a-4457-9628-094ce6b619d7
+13:10:31 [hook] run-consolidation: PROJECT_DIR=C:/Rajendran/new_/OSTTFV PIPELINE_DIR=C:/Users/OG07/.claude/plugins/cache/claude-plugins-official/remember/0.7.3 PYTHON=python3 REMEMBER_DIR=C:/Rajendran/new_/OSTTFV/.remember
+13:10:32 [extract] 15 exchanges (4 human)
+13:10:33 [haiku] calling (branch: main)
+13:10:35 [rotate] ERROR: tar failed for 2 logs
+13:10:35 [consolidation] start
+13:10:35 [hook] session-start: PROJECT_DIR=C:/Rajendran/new_/OSTTFV PIPELINE_DIR=C:/Users/OG07/.claude/plugins/cache/claude-plugins-official/remember/0.7.3 REMEMBER_DIR=C:/Rajendran/new_/OSTTFV/.remember
+13:10:35 [hook] session-start: PROJECT_DIR=C:/Rajendran/new_/OSTTFV PIPELINE_DIR=C:/Users/OG07/.claude/plugins/cache/claude-plugins-official/remember/0.7.3 REMEMBER_DIR=C:/Rajendran/new_/OSTTFV/.remember
+13:10:35 [hook] session-start: PROJECT_DIR=C:/Rajendran/new_/OSTTFV PIPELINE_DIR=C:/Users/OG07/.claude/plugins/cache/claude-plugins-official/remember/0.7.3 REMEMBER_DIR=C:/Rajendran/new_/OSTTFV/.remember
+13:10:36 [hook] save-session: PROJECT_DIR=C:/Rajendran/new_/OSTTFV PIPELINE_DIR=C:/Users/OG07/.claude/plugins/cache/claude-plugins-official/remember/0.7.3 PYTHON=python3 REMEMBER_DIR=C:/Rajendran/new_/OSTTFV/.remember
+13:10:36 [hook] save-session: PROJECT_DIR=C:/Rajendran/new_/OSTTFV PIPELINE_DIR=C:/Users/OG07/.claude/plugins/cache/claude-plugins-official/remember/0.7.3 PYTHON=python3 REMEMBER_DIR=C:/Rajendran/new_/OSTTFV/.remember
+13:10:37 [lock] locked by PID 1540, skipping
+13:10:37 [hook] save-session: PROJECT_DIR=C:/Rajendran/new_/OSTTFV PIPELINE_DIR=C:/Users/OG07/.claude/plugins/cache/claude-plugins-official/remember/0.7.3 PYTHON=python3 REMEMBER_DIR=C:/Rajendran/new_/OSTTFV/.remember
+13:10:37 [lock] locked by PID 1540, skipping
+13:10:37 [force] bypassing cooldown + min msgs
+13:10:37 [hook] run-consolidation: PROJECT_DIR=C:/Rajendran/new_/OSTTFV PIPELINE_DIR=C:/Users/OG07/.claude/plugins/cache/claude-plugins-official/remember/0.7.3 PYTHON=python3 REMEMBER_DIR=C:/Rajendran/new_/OSTTFV/.remember
+13:10:37 [hook] run-consolidation: PROJECT_DIR=C:/Rajendran/new_/OSTTFV PIPELINE_DIR=C:/Users/OG07/.claude/plugins/cache/claude-plugins-official/remember/0.7.3 PYTHON=python3 REMEMBER_DIR=C:/Rajendran/new_/OSTTFV/.remember
+13:10:37 [hook] run-consolidation: PROJECT_DIR=C:/Rajendran/new_/OSTTFV PIPELINE_DIR=C:/Users/OG07/.claude/plugins/cache/claude-plugins-official/remember/0.7.3 PYTHON=python3 REMEMBER_DIR=C:/Rajendran/new_/OSTTFV/.remember
+13:10:37 [extract] session ccace726-8653-4c7d-a049-add606168933
+13:10:37 [extract] 15 exchanges (4 human)
+13:10:38 [haiku] calling (branch: main)
+13:10:40 [rotate] ERROR: tar failed for 2 logs
+13:10:40 [rotate] ERROR: tar failed for 2 logs
+13:10:40 [rotate] ERROR: tar failed for 2 logs
+13:10:40 [consolidation] locked by PID 1568, skip
+13:10:40 [consolidation] locked by PID 1568, skip
+13:10:40 [consolidation] locked by PID 1568, skip
+13:10:51 [hook] session-start: PROJECT_DIR=C:/Rajendran/new_/OSTTFV PIPELINE_DIR=C:/Users/OG07/.claude/plugins/cache/claude-plugins-official/remember/0.7.3 REMEMBER_DIR=C:/Rajendran/new_/OSTTFV/.remember
+13:10:52 [hook] save-session: PROJECT_DIR=C:/Rajendran/new_/OSTTFV PIPELINE_DIR=C:/Users/OG07/.claude/plugins/cache/claude-plugins-official/remember/0.7.3 PYTHON=python3 REMEMBER_DIR=C:/Rajendran/new_/OSTTFV/.remember
+13:10:52 [force] bypassing cooldown + min msgs
+13:10:52 [extract] session ccace726-8653-4c7d-a049-add606168933
+13:10:52 [hook] run-consolidation: PROJECT_DIR=C:/Rajendran/new_/OSTTFV PIPELINE_DIR=C:/Users/OG07/.claude/plugins/cache/claude-plugins-official/remember/0.7.3 PYTHON=python3 REMEMBER_DIR=C:/Rajendran/new_/OSTTFV/.remember
+13:10:52 [extract] 15 exchanges (4 human)
+13:10:53 [haiku] calling (branch: main)
+13:10:55 [rotate] ERROR: tar failed for 2 logs
+13:10:55 [consolidation] locked by PID 1568, skip
+13:10:57 [tokens] tokens: 9+15667cache→1856out ($0.031344)
+13:10:58 [write] appended: ## 07:40 | main
+13:10:58 [write] position → 573
+13:10:58 [ndc] now.md → today-2026-06-21.md
+13:10:58 [ndc] running (PID 2529)
+13:10:59 [consolidation] tokens: 9+15667cache→2464out ($0.031822)
+13:10:59 [consolidation] done: 1 files consolidated
+13:11:01 [tokens] tokens: 9+15667cache→2138out ($0.032754)
+13:11:01 [write] appended: ## 07:40 | main
+13:11:01 [write] position → 573
+13:11:06 [hook] session-start: PROJECT_DIR=C:/Rajendran/new_/OSTTFV PIPELINE_DIR=C:/Users/OG07/.claude/plugins/cache/claude-plugins-official/remember/0.7.3 REMEMBER_DIR=C:/Rajendran/new_/OSTTFV/.remember
+13:11:07 [hook] save-session: PROJECT_DIR=C:/Rajendran/new_/OSTTFV PIPELINE_DIR=C:/Users/OG07/.claude/plugins/cache/claude-plugins-official/remember/0.7.3 PYTHON=python3 REMEMBER_DIR=C:/Rajendran/new_/OSTTFV/.remember
+13:11:07 [force] bypassing cooldown + min msgs
+13:11:07 [extract] session 02296f8a-559a-4457-9628-094ce6b619d7
+13:11:07 [extract] 2 exchanges (1 human)
+13:11:08 [haiku] calling (branch: main)
+13:11:14 [tokens] tokens: 9+15667cache→261out ($0.020327)
+13:11:14 [haiku] SKIP — position → 20
+13:11:14 [tokens] tokens: 9+25911cache→1487out ($0.010035)
+13:11:14 [write] appended: ## 07:40 | main
+13:11:15 [write] position → 573
+13:11:20 [ndc] tokens: 9+15667cache→2274out ($0.030250)
+13:11:20 [ndc] 666→347b (-47%)
+13:12:35 [hook] session-start: PROJECT_DIR=C:/Rajendran/new_/OSTTFV PIPELINE_DIR=C:/Users/OG07/.claude/plugins/cache/claude-plugins-official/remember/0.7.3 REMEMBER_DIR=C:/Rajendran/new_/OSTTFV/.remember
+13:12:36 [hook] save-session: PROJECT_DIR=C:/Rajendran/new_/OSTTFV PIPELINE_DIR=C:/Users/OG07/.claude/plugins/cache/claude-plugins-official/remember/0.7.3 PYTHON=python3 REMEMBER_DIR=C:/Rajendran/new_/OSTTFV/.remember
+13:12:36 [force] bypassing cooldown + min msgs
+13:12:36 [extract] session ccace726-8653-4c7d-a049-add606168933
+13:12:36 [extract] 0 exchanges (0 human)
+13:12:36 [extract] 0 exchanges, skip
+13:13:58 [hook] session-start: PROJECT_DIR=C:/Rajendran/new_/OSTTFV PIPELINE_DIR=C:/Users/OG07/.claude/plugins/cache/claude-plugins-official/remember/0.7.3 REMEMBER_DIR=C:/Rajendran/new_/OSTTFV/.remember
+13:13:59 [hook] save-session: PROJECT_DIR=C:/Rajendran/new_/OSTTFV PIPELINE_DIR=C:/Users/OG07/.claude/plugins/cache/claude-plugins-official/remember/0.7.3 PYTHON=python3 REMEMBER_DIR=C:/Rajendran/new_/OSTTFV/.remember
+13:13:59 [force] bypassing cooldown + min msgs
+13:13:59 [extract] session 02296f8a-559a-4457-9628-094ce6b619d7
+13:13:59 [extract] 2 exchanges (1 human)
+13:14:00 [haiku] calling (branch: main)
+13:14:29 [tokens] tokens: 9+15667cache→2014out ($0.028992)
+13:14:29 [haiku] SKIP — position → 29

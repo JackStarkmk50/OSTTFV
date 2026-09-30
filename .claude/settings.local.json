@@ -1,0 +1,9 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(New-Item -ItemType Directory -Force \"C:\\\\Users\\\\OG07\\\\.claude\\\\projects\\\\C--Rajendran-new--OSTTFV\\\\memory\")",
+      "Bash(Out-Null)",
+      "WebSearch"
+    ]
+  }
+}

@@ -53,12 +53,14 @@ async def export_video(job_id: str, req: ExportVideoRequest):
 
 @router.get("/video/{job_id}/{filename}")
 async def stream_video(job_id: str, filename: str):
+    import mimetypes
     video_path = VIDEOS_DIR / job_id / filename
     if not video_path.exists():
         raise HTTPException(404, "Video not found")
 
+    content_type, _ = mimetypes.guess_type(str(video_path))
     return FileResponse(
         path=str(video_path),
-        media_type="video/mp4",
+        media_type=content_type or "video/mp4",
         headers={"Accept-Ranges": "bytes"},
     )

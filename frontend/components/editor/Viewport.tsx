@@ -1,7 +1,7 @@
 'use client'
 import { useEffect, useRef } from 'react'
 import { useEditorStore } from '@/store/editorStore'
-import { TextStyle } from '@/store/types'
+import { TextStyle, Segment } from '@/store/types'
 
 function getTextStyle(style: TextStyle): React.CSSProperties {
   return {
@@ -29,7 +29,8 @@ interface Props {
 }
 
 export default function Viewport({ videoRef }: Props) {
-  const { project, currentTime, selectedSegmentId, selectSegment } = useEditorStore()
+  const { project, currentTime, selectedSegmentId, selectSegment, updateSegmentStyle } = useEditorStore()
+  const containerRef = useRef<HTMLDivElement>(null)
 
   if (!project) {
     return (
@@ -39,27 +40,69 @@ export default function Viewport({ videoRef }: Props) {
     )
   }
 
-  // Track-aware: video hidden if video track deleted, audio muted if audio track deleted
   const hasVideoTrack = project.tracks.some(t => t.type === 'video' && t.clips.length > 0)
   const audioTrack = project.tracks.find(t => t.type === 'audio')
   const audioMuted = !audioTrack || audioTrack.muted
 
-  // Sync audio mute state to video element
   useEffect(() => {
     if (videoRef.current) videoRef.current.muted = audioMuted
   }, [audioMuted, videoRef])
 
-  const activeSegments = project.segments.filter(
-    seg => currentTime >= seg.start && currentTime <= seg.end
-  )
+  // Collect active subtitle segment IDs
+  const activeClipSegIds = new Set<number>()
+  for (const track of project.tracks) {
+    if (track.type !== 'subtitle') continue
+    for (const clip of track.clips) {
+      if (clip.segmentId !== undefined && currentTime >= clip.start && currentTime <= clip.end) {
+        activeClipSegIds.add(clip.segmentId)
+      }
+    }
+  }
+  const activeSegments = project.segments.filter(seg => activeClipSegIds.has(seg.id))
+
+  // Drag subtitle text position within viewport
+  const startSubtitleDrag = (e: React.MouseEvent, seg: Segment) => {
+    if (e.button !== 0) return
+    e.stopPropagation()
+    e.preventDefault()
+    selectSegment(seg.id)
+
+    const container = containerRef.current
+    if (!container) return
+
+    const containerRect = container.getBoundingClientRect()
+    const startX = e.clientX
+    const startY = e.clientY
+    const startPosX = seg.style.position.x
+    const startPosY = seg.style.position.y
+
+    const onMove = (ev: MouseEvent) => {
+      const dx = ((ev.clientX - startX) / containerRect.width) * 100
+      const dy = ((ev.clientY - startY) / containerRect.height) * 100
+      updateSegmentStyle(seg.id, {
+        position: {
+          x: Math.max(5, Math.min(95, startPosX + dx)),
+          y: Math.max(5, Math.min(95, startPosY + dy)),
+        }
+      })
+    }
+
+    const onUp = () => {
+      window.removeEventListener('mousemove', onMove)
+      window.removeEventListener('mouseup', onUp)
+    }
+
+    window.addEventListener('mousemove', onMove)
+    window.addEventListener('mouseup', onUp)
+  }
 
   return (
     <div className="flex flex-col h-full bg-black">
       <div
+        ref={containerRef}
         className="relative flex-1 flex items-center justify-center overflow-hidden"
         onClick={() => selectSegment(null)}
       >
-        {/* Video element — always mounted, hidden via CSS when no video track */}
         <video
           ref={videoRef}
           src={project.videoUrl}
@@ -67,7 +110,6 @@ export default function Viewport({ videoRef }: Props) {
           style={{ display: hasVideoTrack ? 'block' : 'none' }}
         />
 
-        {/* No video track placeholder */}
         {!hasVideoTrack && (
           <div className="flex flex-col items-center gap-2 text-gray-700">
             <svg className="w-12 h-12 opacity-30" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -79,24 +121,26 @@ export default function Viewport({ videoRef }: Props) {
           </div>
         )}
 
-        {/* Subtitle overlays — only romanized text, no native script */}
+        {/* Subtitle overlays — draggable */}
         {hasVideoTrack && (
-          <div className="absolute inset-0 pointer-events-none">
+          <div className="absolute inset-0">
             {activeSegments.map(seg => {
-              // Always show romanized. If romanized empty (e.g. English source), show original.
-              const displayText = seg.transliterated.trim() || seg.text
+              const displayText = seg.transliterated?.trim() || seg.text
               const isSelected = selectedSegmentId === seg.id
               return (
                 <div
                   key={seg.id}
                   style={{
                     ...getTextStyle(seg.style),
-                    pointerEvents: 'auto',
-                    cursor: 'pointer',
-                    outline: isSelected ? '2px dashed rgba(99,102,241,0.8)' : 'none',
-                    outlineOffset: 4,
+                    cursor: isSelected ? 'move' : 'pointer',
+                    outline: isSelected ? '2px dashed rgba(99,102,241,0.9)' : 'none',
+                    outlineOffset: 6,
                   }}
-                  onClick={e => { e.stopPropagation(); selectSegment(seg.id) }}
+                  onMouseDown={isSelected
+                    ? (e) => startSubtitleDrag(e, seg)
+                    : (e) => { e.stopPropagation(); selectSegment(seg.id) }
+                  }
+                  title={isSelected ? 'Drag to reposition' : 'Click to select · drag to move'}
                 >
                   {displayText}
                 </div>
@@ -104,13 +148,20 @@ export default function Viewport({ videoRef }: Props) {
             })}
           </div>
         )}
+
+        {/* Hint when subtitle selected */}
+        {selectedSegmentId !== null && activeSegments.some(s => s.id === selectedSegmentId) && (
+          <div className="absolute top-2 left-1/2 -translate-x-1/2 bg-black/70 text-gray-400 text-[10px] px-2 py-1 rounded pointer-events-none">
+            Drag subtitle to reposition · use Style panel for fonts/colors
+          </div>
+        )}
       </div>
 
-      {/* Bottom bar — romanized only */}
+      {/* Bottom subtitle bar */}
       {activeSegments.length > 0 && hasVideoTrack && (
-        <div className="px-3 py-1 bg-gray-900/90 border-t border-gray-800 text-xs text-amber-300/80 flex gap-4 truncate">
+        <div className="px-3 py-1.5 bg-gray-900/90 border-t border-gray-800 text-xs text-amber-300/80 flex gap-4 truncate shrink-0">
           {activeSegments.map(seg => (
-            <span key={seg.id}>{seg.transliterated.trim() || seg.text}</span>
+            <span key={seg.id}>{seg.transliterated?.trim() || seg.text}</span>
           ))}
         </div>
       )}

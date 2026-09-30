@@ -4,9 +4,16 @@ import { useRouter } from 'next/navigation'
 import { useEditorStore } from '@/store/editorStore'
 import { exportSRT, exportVideo, translateSegments } from '@/lib/api'
 
+function fmtTC(s: number): string {
+  const m = Math.floor(s / 60)
+  const sec = Math.floor(s % 60)
+  const ms = Math.floor((s % 1) * 100)
+  return `${m}:${sec.toString().padStart(2, '0')}.${ms.toString().padStart(2, '0')}`
+}
+
 export default function Toolbar() {
   const router = useRouter()
-  const { project, setProject } = useEditorStore()
+  const { project, currentTime, setProject } = useEditorStore()
   const [exporting, setExporting] = useState(false)
   const [translating, setTranslating] = useState(false)
   const [translateOpen, setTranslateOpen] = useState(false)
@@ -82,6 +89,13 @@ export default function Toolbar() {
       <span className="text-[10px] bg-gray-800 text-gray-500 rounded px-1.5 py-0.5">
         {langLabel[project.language] ?? project.language.toUpperCase()}
       </span>
+
+      {/* Timecode */}
+      <div className="flex items-center gap-1 bg-gray-900 border border-gray-700 rounded px-2 py-1 font-mono text-xs tabular-nums">
+        <span className="text-indigo-400">{fmtTC(currentTime)}</span>
+        <span className="text-gray-700">/</span>
+        <span className="text-gray-500">{fmtTC(project.duration)}</span>
+      </div>
 
       <div className="flex-1" />
 

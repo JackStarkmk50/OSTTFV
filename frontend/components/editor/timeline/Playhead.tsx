@@ -25,7 +25,8 @@ export default function Playhead({ duration, totalHeight, videoRef }: Props) {
     const onMove = (ev: MouseEvent) => {
       if (!dragging.current || !container) return
       const rect = container.getBoundingClientRect()
-      const x = ev.clientX - rect.left + container.scrollLeft - 140
+      // No header offset — playhead is inside the scrollable clip area
+      const x = ev.clientX - rect.left + container.scrollLeft
       const raw = Math.max(0, Math.min(duration, x / zoom))
       const snapped = snapToFrame(raw)
       setCurrentTime(snapped)
@@ -45,19 +46,19 @@ export default function Playhead({ duration, totalHeight, videoRef }: Props) {
   return (
     <div
       className="absolute top-0 pointer-events-none z-20"
-      style={{ left: left + 140, height: totalHeight }}
+      style={{ left, height: totalHeight }}
     >
-      {/* Draggable head */}
+      {/* Draggable diamond head */}
       <div
-        className="pointer-events-auto cursor-ew-resize absolute -top-1 -translate-x-1/2 flex flex-col items-center"
+        className="pointer-events-auto cursor-ew-resize absolute -top-1 -translate-x-1/2 flex flex-col items-center group"
         onMouseDown={onMouseDown}
-        title="Drag to scrub (snaps to frame)"
+        title="Drag to scrub"
       >
-        <div className="w-3 h-3 bg-red-500 rotate-45 rounded-sm shadow-lg" />
+        <div className="w-3 h-3 bg-red-500 group-hover:bg-red-400 rotate-45 rounded-sm shadow-lg transition-colors" />
       </div>
       {/* Vertical line */}
       <div
-        className="absolute top-2 -translate-x-px w-0.5 bg-red-500/80 shadow-[0_0_6px_rgba(239,68,68,0.5)]"
+        className="absolute top-2 -translate-x-px w-0.5 bg-red-500/80 shadow-[0_0_6px_rgba(239,68,68,0.4)]"
         style={{ height: totalHeight - 8 }}
       />
     </div>

@@ -56,7 +56,7 @@ export default function UploadZone() {
       setStatus('starting')
       await startTranscription(job_id, language || undefined, subtitleMode, wordCount)
       setStatus('done')
-      router.push(`/editor/${job_id}`)
+      router.push(`/review/${job_id}`)
     } catch (e: any) {
       setStatus('error')
       setError(e.message ?? 'Upload failed')
@@ -114,9 +114,9 @@ export default function UploadZone() {
       </div>
 
       <div className="mt-6 w-full max-w-xl space-y-5">
-        {/* Language */}
+        {/* Language hint */}
         <div>
-          <label className="text-xs text-gray-500 mb-2 block">Audio Language</label>
+          <label className="text-xs text-gray-500 mb-1 block">Language Hint <span className="text-gray-700">(optional — Whisper always auto-detects)</span></label>
           <div className="flex flex-wrap gap-2">
             {LANGS.map(l => (
               <button
@@ -132,6 +132,7 @@ export default function UploadZone() {
               </button>
             ))}
           </div>
+          <p className="text-[11px] text-gray-700 mt-1">Selecting a language improves script accuracy but detection is always automatic</p>
         </div>
 
         {/* Subtitle Mode */}

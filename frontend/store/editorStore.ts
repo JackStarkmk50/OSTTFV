@@ -102,7 +102,8 @@ export const useEditorStore = create<EditorState>((set, get) => ({
     const tracks = s.project.tracks.map(t => {
       const clip = t.clips.find(c => c.id === clipId)
       if (clip) {
-        movedClip = { ...clip, trackId: newTrackId, start: Math.max(0, newStart), end: Math.max(0, newStart) + (clip.end - clip.start) }
+        const dur = clip.end - clip.start
+        movedClip = { ...clip, trackId: newTrackId, start: Math.max(0, newStart), end: Math.max(0, newStart) + dur }
         return { ...t, clips: t.clips.filter(c => c.id !== clipId) }
       }
       return t
@@ -114,42 +115,58 @@ export const useEditorStore = create<EditorState>((set, get) => ({
       t.id === newTrackId ? { ...t, clips: [...t.clips, movedClip!] } : t
     )
 
-    return { project: { ...s.project, tracks: finalTracks } }
+    // Sync subtitle segment timing when clip moves
+    const mc = movedClip
+    const segments = mc.segmentId !== undefined
+      ? s.project.segments.map(seg =>
+          seg.id === mc.segmentId ? { ...seg, start: mc.start, end: mc.end } : seg
+        )
+      : s.project.segments
+
+    return { project: { ...s.project, tracks: finalTracks, segments } }
   }),
 
   trimClipStart: (clipId, newStart) => set((s) => {
     if (!s.project) return s
-    return {
-      project: {
-        ...s.project,
-        tracks: s.project.tracks.map(t => ({
-          ...t,
-          clips: t.clips.map(c => {
-            if (c.id !== clipId) return c
-            const start = Math.max(0, Math.min(newStart, c.end - 0.1))
-            return { ...c, start }
-          })
-        }))
-      }
-    }
+    let trimmed: Clip | null = null
+    const tracks = s.project.tracks.map(t => ({
+      ...t,
+      clips: t.clips.map(c => {
+        if (c.id !== clipId) return c
+        const start = Math.max(0, Math.min(newStart, c.end - 0.1))
+        trimmed = { ...c, start }
+        return trimmed
+      })
+    }))
+    const tc = trimmed
+    const segments = tc && tc.segmentId !== undefined
+      ? s.project.segments.map(seg =>
+          seg.id === tc.segmentId ? { ...seg, start: tc.start } : seg
+        )
+      : s.project.segments
+    return { project: { ...s.project, tracks, segments } }
   }),
 
   trimClipEnd: (clipId, newEnd) => set((s) => {
     if (!s.project) return s
     const duration = s.project.duration
-    return {
-      project: {
-        ...s.project,
-        tracks: s.project.tracks.map(t => ({
-          ...t,
-          clips: t.clips.map(c => {
-            if (c.id !== clipId) return c
-            const end = Math.min(duration, Math.max(newEnd, c.start + 0.1))
-            return { ...c, end }
-          })
-        }))
-      }
-    }
+    let trimmed: Clip | null = null
+    const tracks = s.project.tracks.map(t => ({
+      ...t,
+      clips: t.clips.map(c => {
+        if (c.id !== clipId) return c
+        const end = Math.min(duration, Math.max(newEnd, c.start + 0.1))
+        trimmed = { ...c, end }
+        return trimmed
+      })
+    }))
+    const tc = trimmed
+    const segments = tc && tc.segmentId !== undefined
+      ? s.project.segments.map(seg =>
+          seg.id === tc.segmentId ? { ...seg, end: tc.end } : seg
+        )
+      : s.project.segments
+    return { project: { ...s.project, tracks, segments } }
   }),
 
   deleteClip: (clipId) => set((s) => {
